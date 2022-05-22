@@ -6,13 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../Css/Contacto.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 
-<body class="container">
+<body class="container-(breakpoint)">
     <header class="header">
         <a href="../index.html">
             <h1 class="title__header">Hello!</h1>
@@ -27,43 +29,41 @@
     </header>
     <section class="section1">
         <h2 class="section1__h2">Contáctanos</h2>
-        <form action="" class="section1__form">
-            <div class="form__div">
-                <label for="name" class="label">Nombre:</label>
-                <input class="input" type="text">
-            </div>
-            <div class="form__div">
-                <label for="Telefono" class="label">Telefono</label>
-                <input class="input" type="text">
-            </div>
-            <div class="form__div">
-                <label for="Email" class="label">Correo Electrónico</label>
-                <input class="input" type="text">
-            </div>
-            <div class="form__div">
-                <label for="Submit" class="label"></label>
-                <input class="input" type="submit">
-            </div>
-        </form>
         <div class="texto">
-            <p>Hola!. <br> 
-            Esperamos la estés pasando 
-            incríble visitando nuestra página, todo
-            lo que ves fué pensado para amantes de 
-            los mangos como nosotros.
+            <p>Hola!. <br>
+                Esperamos la estés pasando
+                incríble visitando nuestra página, todo
+                lo que ves fué pensado para amantes de
+                los mangos como nosotros.
             </p> <br>
             <p> Es por ello que sabemos el interés que
-            tienes por crear el negocio de tu sueños
-            con la fruta más deliciosa de todas (Y con
-            la que todo nuestro equipo se identifica...)
+                tienes por crear el negocio de tu sueños
+                con la fruta más deliciosa de todas (Y con
+                la que todo nuestro equipo se identifica...)
             </p> <br>
             <p> Este formulario nos ayudará a ponernos en Contacto
-            contigo y ofrecerte la atención personalizada
-            que alguien como tú necesita. <br>
-            Te esperamos :)
+                contigo y ofrecerte la atención personalizada
+                que alguien como tú necesita. <br>
+                Te esperamos :)
             </p>
         </div>
     </section>
+    <form class="container-xxl">
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Dirección de Email</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">Nunca compartas tu cuenta con alguien más</div>
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Chequeame</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
     <footer class="footer">
         <h2 class="footer__h2">Mango</h2>
         <h3 class="footer__h3">Go to:</h3>
@@ -87,6 +87,9 @@
 
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

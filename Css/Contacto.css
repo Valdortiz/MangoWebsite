@@ -51,16 +51,17 @@
 
 .section1 {
     display: grid;
-    grid-template-columns: 50px 1fr 1fr 50px;
-    grid-template-rows: 200px 300px 50px;
+    grid-template-columns: 50px 1fr 50px;
+    grid-template-rows: 300px 50px;
     background-color: black;
     font-family: 'Montserrat Alternates', sans-serif;
     padding-bottom: 5%;
+    padding-top: 5%;
 }
 
 .section1__h2 {
-    grid-column-start: 3;
-    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-row-start: 3;
     font-size: 40px;
     display: flex;
     justify-content: center;
@@ -73,7 +74,7 @@
     grid-row-start: 2;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
     justify-content: space-between;
     padding-top: 30px;
@@ -100,7 +101,7 @@
 .texto {
     color: beige;
     grid-column-start: 2;
-    grid-row-start: 2;
+    grid-row-start: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -110,14 +111,39 @@
 
 /* Aquí termina el form */
 
+.container-xxl{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-label{
+    color: beige;
+}
+
+#exampleInputEmail1{
+    width: 300px;
+}
+
+#exampleInputPassword1{
+    width: 300px;
+}
+
+.btn-primary{
+    width: 200px;
+}
+
+/* Termina form de Bootstrap*/ 
+
 .footer {
     background-color: black;
     color: beige;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(4, 100px);
-    padding-top: 20px;
     font-family: 'Montserrat Alternates', sans-serif;
+    padding-top: 150px;
 }
 
 .footer__h2 {

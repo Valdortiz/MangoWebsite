@@ -6,13 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../Css/Nosotros.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 
-<body class="container">
+<body class="container-(breakpoint)">
     <header class="header">
         <a href="../index.html" class="header__h1">
             <h1 class="title__header">Hello!</h1>
@@ -35,16 +37,18 @@
             <h2>¿Amante de los Mangos? <br> Entonces tenemos que hablar</h2>
         </div>
     </section>
-    <section class="section2">
-        <div class="section2__div1">
-            <img src="../Images/Mango fondo Rojo.jpg" alt="" class="section2__img" id="img1">
-        </div>
-        <div class="section2__div2">
-            <img src="../Images/Playa de Mango.jpg" alt="" class="section2__img">
-        </div>
-        <div class="section2__div3">
-            <img src="../Images/Mango fondo Azul.jpg" alt="" class="section2__img" id="img3">
-        </div>
+    <section class="container-xxl">
+        <div class="row">
+            <div class="col align-self-start">
+              <img src="../Images/Mango fondo Azul.jpg" class="img1" alt="">
+            </div>
+            <div class="col align-self-center">
+              <img src="../Images/Mango fondo Rojo.jpg" class="img2" alt="">
+            </div>
+            <div class="col align-self-end">
+              <img src="../Images/Playa de Mango.jpg" class="img3" alt="">
+            </div>
+          </div>
     </section>
     <section class="section3">
         <div class="section3__div1">
@@ -79,6 +83,9 @@
 
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

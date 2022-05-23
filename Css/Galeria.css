@@ -171,6 +171,13 @@
     border-radius: 20px;
 }
 
+.rounded {
+    height: 300px;
+    width: 300px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
 .section5__div1 {
     grid-column-start: 2;
     grid-row-start: 1;
@@ -317,7 +324,7 @@
     .section1 {
         grid-area: section1;
         display: grid;
-        grid-template-columns: 320px;
+        grid-template-columns: 1fr;
         grid-template-rows: 500px;
     }
 
@@ -335,7 +342,8 @@
     }
 
     .section2__img1 {
-        height: 200px;
+        height: 250px;
+        width: 250px;
     }
 
     /* Termina Section 2*/
@@ -439,7 +447,13 @@
     .section5__img {
         height: 150px;
         width: 150px;
+    }
 
+    .rounded {
+        height: 150px;
+        width: 150px;
+        border-radius: 20px;
+        object-fit: cover;
     }
 
     /* Termina Section 5 */

@@ -92,15 +92,6 @@
 
 /* Aquí termina section 2 */
 
-.section2 {
-    background-color: black;
-    font-family: 'Montserrat Alternates', sans-serif;
-    color: beige;
-    display: grid;
-    grid-template-columns: 700px 400px;
-    grid-template-rows: 600px;
-    padding-bottom: 10%;
-}
 
 .section2__div1 {
     display: flex;
@@ -108,10 +99,10 @@
     align-items: flex-end;
 }
 
-.img2 {
+.img-fluid {
     height: 400px;
     width: 400px;
-    border-radius: 300px;
+    border-radius: 50px;
 }
 
 .section2__div2 {
@@ -311,7 +302,7 @@
 
 @media (min-width: 320px) and (max-width: 991.98px) {
 
-    .container {
+    .cont {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 250px 400px 600px 1000px 1fr 1fr;
@@ -328,7 +319,7 @@
     .header {
         grid-area: header;
         display: grid;
-        grid-template-columns: 320px;
+        grid-template-columns: 1fr;
         grid-template-rows: 120px;
     }
 
@@ -349,7 +340,7 @@
     .section1 {
         grid-area: section1;
         display: grid;
-        grid-template-columns: 320px;
+        grid-template-columns: 1fr;
         grid-template-rows: 170px 200px 100px;
     }
 
@@ -377,27 +368,27 @@
 
     /* Termina Section 1*/
     
-    .section2 {
-        grid-area: section2;
-        display: grid;
-        grid-template-columns: 320px;
-        grid-template-rows: 170px 300px;
+    .card {
+        background-color: black;
+        margin-bottom: 0%;
+        font-family: 'Montserrat Alternates', sans-serif;
+        color: beige;
     }
 
-    .section2__div1 {
-        grid-column-start: 1;
-        grid-row-start: 2;
+    .col-md-4 {
+        display: flex;
+        justify-content: center;
     }
 
-    .img2 {
-        height: 250px;
-        width: 250px;
+    .img-fluid {
+        height: 150px;
+        width: 300px;
+        border-radius: 30px;
     }
 
-    .section2__div2 {
-        grid-column-start: 1;
-        grid-row-start: 1;
-        padding-top: 0%;
+    .card.title {
+        font-family: 'Montserrat Alternates', sans-serif;
+        color: beige;
     }
 
     /* Termina Section 2*/
@@ -405,7 +396,7 @@
     .section3 {
         grid-area: section3;
         display: grid;
-        grid-template-columns: 320px;
+        grid-template-columns: 1fr;
         grid-template-rows: 170px 50px 220px 220px 200px;
     }
 
@@ -440,7 +431,7 @@
     .section4 {
         grid-area: section4;
         display: grid;
-        grid-template-columns: 320px;
+        grid-template-columns: 1fr;
         grid-template-rows: 80px 70px 100px 160px 160px;
         padding-bottom: 10%;
     }

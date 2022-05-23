@@ -223,12 +223,12 @@
     height: 60px;
 }
 
-@media screen and (max-width:320px) {
+@media (min-width: 320px) and (max-width: 991.98px) {
 
-    .container {
+    .cont {
         display: grid;
-        grid-template-columns: 320px;
-        grid-template-rows: 250px 650px 1000px 800px 1fr;
+        grid-template-columns: 1fr;
+        grid-template-rows: 300px 550px 1000px 800px 1fr;
         gap: 0px 0px;
         grid-template-areas:
             "header"
@@ -241,7 +241,7 @@
     .header {
         grid-area: header;
         display: grid;
-        grid-template-columns: 320px;
+        grid-template-columns: 1fr;
         grid-template-rows: 120px;
     }
 
@@ -261,11 +261,11 @@
 
     .section1 {
         grid-area: section1;
-        padding-top: 10%;
+        padding-top: 5%;
         padding-left: 1%;
         display: grid;
-        grid-template-columns: 320px;
-        grid-template-rows: 220px 150px 300px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 220px 150px 1px;
     }
 
     .section1__img {
@@ -282,46 +282,30 @@
 
     /* Termina Section 1 */
 
-    .section2 {
-        grid-area: section2;
-        grid-template-columns: 320px;
-        grid-template-rows: repeat(3, 300px);
-        row-gap: 15px;
-    }
-
-    .section2__div1 {
-        grid-column-start: 1;
-        grid-row-start: 2;
+    .row{
         display: flex;
-        justify-content: center;
-        padding-left: 0px;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
-    #img1 {
-        height: 300px;
-
+    .col {
+        padding-left: 10%;
+        padding-top: 5%;
     }
 
-    .section2__div2 {
-        grid-column-start: 1;
-        grid-row-start: 3;
-        padding-left: 10px;
+    .img1 {
+        height: 250px;
+        width: 250px;
     }
 
-    .section2__img {
-        height: 300px;
-
+    .img2 {
+        height: 400px;
+        width: 250px;
     }
 
-
-    .section2__div3 {
-        grid-column-start: 1;
-        grid-row-start: 1;
-        padding-left: 10px;
-    }
-
-    #img3 {
-        height: 300px;
+    .img3 {
+        height: 250px;
+        width: 250px;
     }
 
     /* Termina Section 2*/

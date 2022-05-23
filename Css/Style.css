@@ -297,10 +297,10 @@
 
 @media (min-width: 320px) and (max-width: 991.98px) {
 
-    .container {
+    .cont {
         display: grid;
-        grid-template-columns: 320px;
-        grid-template-rows: 250px 750px 2300px 3200px 1fr;
+        grid-template-columns: 1fr;
+        grid-template-rows: 250px 750px 2300px 800px 1fr;
         gap: 0px 0px;
         grid-template-areas:
             "header"
@@ -454,7 +454,7 @@
     .section4 {
         grid-area: section4;
         padding-top: 0px;
-        grid-template-columns: 320px;
+        grid-template-columns: 1fr;
         grid-template-rows: 390px 550px 390px 850px 390px 650px;
     }
 

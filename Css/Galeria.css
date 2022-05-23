@@ -276,11 +276,11 @@
     height: 60px;
 }
 
-@media screen and (max-width:320px) {
+@media (min-width: 320px) and (max-width: 991.98px) {
 
-    .container {
+    .cont {
         display: grid;
-        grid-template-columns: 320px;
+        grid-template-columns: 1fr;
         grid-template-rows: 250px 550px 300px 1000px 450px 800px 1fr;
         gap: 0px 0px;
         grid-template-areas:

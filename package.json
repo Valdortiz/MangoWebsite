@@ -1,0 +1,25 @@
+{
+  "name": "mirepo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css":"node-sass --include-path scss sass/Style.scss css/Style.css",
+    "watch-css":"nodemon -e scss -x \"npm run build-css\" "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Valdortiz/MangoWebsite.git"
+  },
+  "author": "Osvaldo Ortiz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Valdortiz/MangoWebsite/issues"
+  },
+  "homepage": "https://github.com/Valdortiz/MangoWebsite#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.16"
+  }
+}

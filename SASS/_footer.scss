@@ -1,0 +1,98 @@
+.footer {
+    background-color: $color-primario;
+    color: $color-secundario;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, 100px);
+    padding-top: 20px;
+    font-family: $FuentePrincipal;
+    padding-top: 5%;
+
+    @media (min-width: 320px) and (max-width: 991.98px) {
+
+        grid-area: footer;
+        grid-template-columns: 200px 10px;
+        grid-template-rows: 50px 100px 200px 100px 100px;
+    }
+
+    &__h2 {
+        font-size: 50px;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__h3 {
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media (min-width: 320px) and (max-width: 991.98px) {
+
+            grid-column-start: 4;
+            grid-row-start: 2;
+        }
+    }
+
+    &__links {
+        grid-column-start: 2;
+        grid-row-start: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+        .footer_link {
+            color: $color-secundario;
+            text-decoration: none;
+
+            &:hover {
+                color: yellow;
+            }
+        }
+
+        @media (min-width: 320px) and (max-width: 991.98px) {
+
+            grid-column-start: 4;
+            grid-row-start: 3;
+        }
+    }
+
+
+    &__contact {
+        grid-column-start: 3;
+        grid-row-start: 3;
+        display: flex;
+        justify-content: center;
+
+        @media (min-width: 320px) and (max-width: 991.98px) {
+
+            grid-column-start: 1;
+            grid-row-start: 4;
+        }
+    }
+
+    &__images {
+        grid-column-start: 3;
+        grid-row-start: 4;
+        display: flex;
+        justify-content: center;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        @media (min-width: 320px) and (max-width: 991.98px) {
+
+            grid-column-start: 1;
+            grid-row-start: 5;
+        }
+
+        .icons {
+            height: 60px;
+
+            @media (min-width: 320px) and (max-width: 991.98px) {
+
+                height: 50px;
+            }
+        }
+    }
+}

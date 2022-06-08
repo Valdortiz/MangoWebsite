@@ -1,0 +1,110 @@
+.cont {
+
+    @media (min-width: 320px) and (max-width: 991.98px) {
+
+        font-family: 'Montserrat Alternates', sans-serif;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 250px 650px 1fr;
+        gap: 0px 0px;
+        grid-template-areas:
+        "header"
+        "section1"
+        "section2"
+        "section3"
+        "footer";
+
+    }
+}
+
+.section8 {
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    grid-template-rows: 300px 50px;
+    background-color: black;
+    font-family: 'Montserrat Alternates', sans-serif;
+    padding-bottom: 5%;
+    padding-top: 5%;
+
+    @media (min-width: 320px) and (max-width: 991.98px) {
+
+        grid-area: section1;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 450px 100px;
+        padding-top: 7%;
+    }
+    
+    &__h2 {
+        grid-column-start: 2;
+        grid-row-start: 3;
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        color: beige;
+
+        @media (min-width: 320px) and (max-width: 991.98px) {
+
+            grid-column-start: 1;
+            grid-row-start: 2;
+            display: flex;
+            align-items: flex-end;
+        }
+    }
+    
+    .texto {
+        color: beige;
+        grid-column-start: 2;
+        grid-row-start: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 5px;
+
+        @media (min-width: 320px) and (max-width: 991.98px) {
+
+            grid-column-start: 1;
+            grid-row-start: 1;
+            padding-left: 3%;
+        }
+        
+    }
+}
+
+.container-xxl{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    .form-label{
+        color: beige;
+        font-size: 120%;
+    }
+    
+    .input {
+        border-radius: 7px;
+        height: 25px;
+        width: 200%;
+
+        @media (min-width: 320px) and (max-width: 991.98px) {
+
+            width: 150%;
+        }
+    }
+    
+    .btn-primary{
+        width: 200px;
+    }
+    
+    #exampleInputEmail1{
+        width: 300px;
+    }
+    
+    #exampleInputPassword1{
+        width: 300px;
+    }
+}
+
+/* Termina form de Bootstrap*/ 

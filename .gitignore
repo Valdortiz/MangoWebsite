@@ -2,3 +2,7 @@
 node_modules
 #ignora el archivo del Desktop
 desktop.ini
+#ignora el archivo del Lock.json
+package-lock.json
+#ignora el archivo del Json
+package.json

@@ -4,7 +4,7 @@
 
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 250px 550px 300px 1000px 450px 800px 1fr;
+        grid-template-rows: 250px 550px 400px 1000px 1fr 800px 1fr;
         gap: 0px 0px;
         grid-template-areas:
             "header"
@@ -29,6 +29,7 @@
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 500px;
+        padding: 0%;
     }
     
     &__div0 {
@@ -42,7 +43,9 @@
 
             display: inline-flex;
             flex-direction: column;
+            justify-intems: center;
             align-content: center;
+            align-items: center;
             padding-left: 5%;
         }
         
@@ -84,8 +87,8 @@
 
         @media (min-width: 320px) and (max-width: 991.98px) {
 
-            height: 250px;
-            width: 250px;
+            height: 370px;
+            width: 90%;
         }
     }
 }
@@ -123,10 +126,12 @@
         .section11__img1 {
             height: 700px;
             border-radius: 30px;
+            object-fit: cover;
 
             @media (min-width: 320px) and (max-width: 991.98px) {
 
                 height: 400px;
+                width: 90%;
             }
 
         }
@@ -153,7 +158,7 @@
             @media (min-width: 320px) and (max-width: 991.98px) {
 
                 height: 150px;
-                width: 320px;
+                width: 90%;
             }
         }
     }
@@ -179,7 +184,7 @@
             @media (min-width: 320px) and (max-width: 991.98px) {
 
                 height: 150px;
-                width: 320px;
+                width: 90%;
             }
         }
     }
@@ -207,7 +212,8 @@
 
             @media (min-width: 320px) and (max-width: 991.98px) {
 
-                height: 350px;
+                height: 90%;
+                width: 70%;
             }
         }
     }
@@ -333,8 +339,8 @@
 
         @media (min-width: 320px) and (max-width: 991.98px) {
 
-            height: 150px;
-            width: 150px;
+            height: 80%;
+            width: 60%;
             border-radius: 20px;
             object-fit: cover;
         }

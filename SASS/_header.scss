@@ -11,7 +11,7 @@
 
         grid-area: header;
         display: grid;
-        grid-template-columns: 320px;
+        grid-template-columns: 1fr;
         grid-template-rows: 120px;
 
     }
@@ -20,6 +20,7 @@
         display: inline-block;
         margin-left: 5%;
         margin-top: 2%;
+        text-decoration: none;
 
         .title__header {
             font-size: 50px;
@@ -31,10 +32,10 @@
             justify-items: flex-end;
 
             @media (min-width: 320px) and (max-width: 991.98px) {
-
-                justify-items: center;
-                padding-left: 15%;
-
+                display: flex;
+                justify-content: center;
+                margin-left: 0%;
+                text-decoration: none;
             }
         }
     }

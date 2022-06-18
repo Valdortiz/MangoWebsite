@@ -24,7 +24,7 @@ body {
         "parrafo parrafo";
     grid-template-columns: 600px 1fr;
     grid-template-rows: 450px 100px;
-    padding-bottom: 100px;
+    padding-bottom: 40px;
 
     @media (min-width: 320px) and (max-width: 991.98px) {
       
@@ -44,11 +44,12 @@ body {
 
         @media (min-width: 320px) and (max-width: 991.98px) {
    
-            height: 220px;
-            padding-left: 6%;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
         }
     }
-    
+
     &__div {
         display: flex;
         flex-direction: column;
@@ -78,7 +79,7 @@ body {
 
 .container-xxl {
     background-color: black;
-    padding-top: 10%;
+    padding-top: 5%;
     
     .row {
         padding-left: 5%;
@@ -88,6 +89,7 @@ body {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            padding-left: 0%;
         }
 
         .col {
@@ -102,6 +104,7 @@ body {
         .img1 {
             height: 50%;
             width: 70%;
+            border-radius: 30px;
 
             @media (min-width: 320px) and (max-width: 991.98px) {
   
@@ -113,11 +116,12 @@ body {
         .img2 {
             height: 60%;
             width: 80%;
+            border-radius: 30px;
 
             @media (min-width: 320px) and (max-width: 991.98px) {
    
                 height: 400px;
-                width: 250px;
+                width: 250px;  
             }
                 
         }
@@ -125,7 +129,7 @@ body {
         .img3 {
             height: 50%;
             width: 70%;
-
+            border-radius: 30px;
             @media (min-width: 320px) and (max-width: 991.98px) {
 
                 height: 250px;
@@ -156,10 +160,14 @@ body {
     
     &__div1 {
         display: flex;
-        align-items: flex-end;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
         flex-direction: column;
         padding-top: 10%;
         grid-column-start: 1;
+        grid-column-end: 3;
         grid-row-start: 1;
         font-family: 'Montserrat Alternates', sans-serif;
         font-size: 30px;
@@ -169,6 +177,7 @@ body {
         display: flex;
         justify-content: flex-end;
         grid-column-start: 1;
+        grid-column-end: 3;
         grid-row-start: 2;
         grid-row-end: 2;
         padding-right: 10%;
@@ -187,7 +196,8 @@ body {
 
             @media (min-width: 320px) and (max-width: 991.98px) {
 
-                height: 450px;
+                height: 95%;
+                width: 50%;
             }
         }
     }

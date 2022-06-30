@@ -11,22 +11,29 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Contáctanos</title>
 </head>
 
 <body class="cont">
-    <header class="header">
-        <a href="../index.html" class="header__h1">
-            <h1 class="title__header">Hello!</h1>
+    <header class="main-header" >
+        <a class="main-logo"  href="../index.html">
+          <h1 class="h1">Hello</h1>
         </a>
-        <nav class="header__nav">
-            <a href="../index.html" class="header__nav__link">Inicio</a>
-            <a href="Nosotros.html" class="header__nav__link">Nosotros</a>
-            <a href="Contacto.html" class="header__nav__link">Contacto</a>
-            <a href="Servicios.html" class="header__nav__link">Servicios</a>
-            <a href="Galeria.html" class="header__nav__link">Galería</a>
+        <nav id="nav" class="main-nav" >
+            <div class="nav-links" >
+                <a class="link-item" href="../index.html" >Inicio</a>
+                <a class="link-item" href="./Nosotros.html" >Nosotros</a>
+                <a class="link-item" href="./Contacto.html" >Contacto</a>
+                <a class="link-item" href="./Servicios.html" >Servicios</a>
+                <a class="link-item" href="./Galeria.html" >Galería</a>
+            </div>
         </nav>
-    </header>
+        <button id="button-menu" class="button-menu" >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </header>
     <section class="section8">
         <h2 class="section8__h2">Contáctanos</h2>
         <div class="texto">
@@ -50,13 +57,21 @@
     </section>
     <form class="container-xxl">
         <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Dirección de Email</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            <div id="emailHelp" class="form-text">Nunca compartas tu cuenta con alguien más</div>
+            <label for="exampleInputPassword1" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="exampleInputPassword1">
         </div>
         <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
+            <label for="exampleInputPassword1" class="form-label">Número de teléfono</label>
+            <input type="tel" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Dirección de Email</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label message">Escríbenos tu mensaje</label>
+            <input type="text" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">Dinos lo qué te interesa y nos contactaremos</div>
         </div>
         <div class="mb-3 form-check">
             <input type="checkbox" class="form-check-input" id="exampleCheck1">
@@ -90,6 +105,22 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
+    <script>
+        const toggleButton = document.getElementById('button-menu')
+const navWrapper = document.getElementById('nav')
+
+toggleButton.addEventListener('click',() => {
+  toggleButton.classList.toggle('close')
+  navWrapper.classList.toggle('show')
+})
+
+navWrapper.addEventListener('click',e => {
+  if(e.target.id === 'nav'){
+    navWrapper.classList.remove('show')
+    toggleButton.classList.remove('close')
+  }
+})
+      </script>
 </body>
 
 </html>

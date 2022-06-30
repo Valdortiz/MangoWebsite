@@ -61,6 +61,7 @@
         flex-direction: column;
         justify-content: center;
         padding-top: 5px;
+        font-size: 20px;
 
         @media (min-width: 320px) and (max-width: 991.98px) {
 
@@ -77,6 +78,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 10%;
     
     .form-label{
         color: beige;
@@ -100,6 +102,16 @@
     
     #exampleInputEmail1{
         width: 300px;
+    }
+
+    #exampleInputEmail2{
+        width: 600px;
+        height: 120px;
+
+        @media (min-width: 320px) and (max-width: 991.98px) {
+
+            width: 500px;
+        }
     }
     
     #exampleInputPassword1{

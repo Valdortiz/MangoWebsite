@@ -137,16 +137,6 @@ body {
             animation-duration: 30s;
             animation-delay: 0s;
 
-            @if ($bp-small == 500px) {
-                color: deeppink;
-            }
-            @else if ($bp-xl == 991.98px) {
-                color: aquamarine;
-            }
-            @else if ($bp-1280 == 1280px) {
-                color: yellow;
-            }
-
             @media (min-width: 320px) and (max-width: 991.98px) {
 
                 grid-column-start: 4;
@@ -228,7 +218,8 @@ body {
         &__txt1 {
             grid-column-start: 1;
             grid-row-start: 1;
-            padding-left: 15%;
+            padding-left: 10%;
+            padding-top: 5%;
 
             @media (min-width: 320px) and (max-width: 991.98px) {
 
@@ -247,7 +238,7 @@ body {
 
 
                 &:hover {
-                    color: orange;
+                    color: yellow;
                 }
             }
 
@@ -268,7 +259,8 @@ body {
         &__txt2 {
             grid-column-start: 1;
             grid-row-start: 2;
-            padding-left: 15%;
+            padding-left: 10%;
+            padding-top: 5%;
 
             @media (min-width: 320px) and (max-width: 991.98px) {
 
@@ -288,7 +280,7 @@ body {
                 display: inline-block;
 
                 &:hover {
-                    color: orange;
+                    color: yellow;
                 }
             }
 
@@ -309,7 +301,8 @@ body {
         &__txt3 {
             grid-column-start: 1;
             grid-row-start: 3;
-            padding-left: 15%;
+            padding-left: 10%;
+            padding-top: 5%;
 
             @media (min-width: 320px) and (max-width: 991.98px) {
 
@@ -327,7 +320,7 @@ body {
                 display: inline-block;
 
                 &:hover {
-                    color: orange;
+                    color: yellow;
                 }
             }
 
@@ -363,8 +356,8 @@ body {
             }
 
             .section2__img__link {
-                height: 250px;
-                width: 250px;
+                height: 300px;
+                width: 300px;
                 margin-right: 2%;
                 margin-left: 3%;
                 border-radius: 200px;
@@ -388,8 +381,8 @@ body {
             }
 
             .section2__img__link {
-                height: 250px;
-                width: 250px;
+                height: 300px;
+                width: 300px;
                 margin-right: 2%;
                 margin-left: 3%;
                 border-radius: 200px;
@@ -413,17 +406,13 @@ body {
             }
 
             .section2__img__link {
-                height: 250px;
-                width: 250px;
+                height: 300px;
+                width: 300px;
                 margin-right: 2%;
                 margin-left: 3%;
                 border-radius: 200px;
 
-                @media (min-width: 320px) and (max-width: 991.98px) {
-
-                    height: 200px;
-                    width: 200px;
-                }
+                
             }
         }
 

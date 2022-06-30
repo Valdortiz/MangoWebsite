@@ -1,75 +1,152 @@
 /* Header para todas las páginas */
 
-.header {
-    font-family: $FuentePrincipal;
-    background-color: rgba(0, 0, 0, 0.89);
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 150px;
+.main-header{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 110px 30px 75px 30px;
+   
+    .main-logo{
+      color: black;
+      font-size:32px;
+      text-decoration:none;
+      padding-bottom: 5%;
+      padding-left: 3%;
 
-    @media (min-width: 320px) and (max-width: 991.98px) {
+      @media screen and (min-width:768px) {
 
-        grid-area: header;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 120px;
-
-    }
-
-    .header__h1 {
-        display: inline-block;
-        margin-left: 5%;
-        margin-top: 2%;
-        text-decoration: none;
-
-        .title__header {
-            font-size: 50px;
-            margin-top: 35px;
-            margin-left: 30px;
-            color: aliceblue;
-            text-decoration: none;
-            display: inline-block;
-            justify-items: flex-end;
-
-            @media (min-width: 320px) and (max-width: 991.98px) {
-                display: flex;
-                justify-content: center;
-                margin-left: 0%;
-                text-decoration: none;
-            }
+          flex-basis: 30%;
         }
+      
+      .h1 {
+        font-size: 70px;
+        font-family: $FuentePrincipal;
+      }
     }
+    
+    .main-nav{
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100%;
+      margin-left: -100%;
+      transition: all .2s linear;
+      background-color: rgba(0,0,0,0.89);
+      z-index: 100;
 
-    &__nav {
+      @media screen and (min-width:768px) {
+
+          position: static;
+          margin-left: 0;
+          flex-basis: 70%;
+          height: 100%;
+        }
+      
+      &.show{
+        margin-left: 0;
+      }
+      
+      .nav-links{
+        background-color: white;
         display: flex;
+        flex-direction: column;
+        width: 70%;
+        height: 100%;
+        align-items: center;
         justify-content: flex-start;
-        justify-content: space-evenly;
-        align-items: flex-end;
-        padding-bottom: 5%;
 
-        @media (min-width: 320px) and (max-width: 991.98px) {
+        @media screen and (min-width:768px) {
 
-            display: inline-flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-between;
-
-        }
-
-        .header__nav__link {
-            color: aliceblue;
-            text-decoration: none;
-
-            &:hover {
-                color: yellow;
+              width: 100%;
+              flex-direction: row;
+              flex-wrap: wrap;
+              align-items: center;
+              justify-content: flex-end;
+              background: white;
             }
-
-            
+       
         }
+
+        .link-item{
+          margin-top: 2rem;
+          color: #444444;
+          text-decoration: none;
+          font-weight: bold;
+          position: relative;
+          font-family: $FuentePrincipal;
+
+          @media screen and (min-width:768px) {
+  
+              display: inline-block;
+              margin-top: 0;
+              margin-right: 2rem;
+            }
+          
+            &::after {
+              position: absolute;
+              content: "";
+              background-color: black;
+              bottom: -5px;
+              left: 0;
+              width: 0%;
+              height: 3px;
+              transition: 0.3s ease all;
+             
+            }
+            
+            &:hover::after {
+              width: 100%;
+            }
+        }  
+        
+        
     }
 
+    .button-menu{
+      z-index: 200;
+      width: 40px;
+      height: 40px;
+      border: none;
+      display: flex;
+      background: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+
+      @media screen and (min-width:768px) {
+        
+          display: none;
+        }
+     
+    }
+    
+    .button-menu span{
+      width: 37px;
+      height: 4px;
+      margin-bottom: 5px;
+      position: relative;
+      background: #444444;
+      border-radius: 3px;
+      transform-origin: 4px 0px;
+      transition: all .2s linear;
+      
+    }   
+    
+    .button-menu.close span {
+      opacity: 1;
+      transform: rotate(45deg) translate(0px, 0px);
+      background: #ffffff;
+    }
+    
+    .button-menu.close span:nth-child(2){
+      transform: rotate(-45deg) translate(-8px, 5px);
+    }
+    
+    .button-menu.close span:nth-child(3){
+      display: none;
+    }
 }
-
-
-
-
